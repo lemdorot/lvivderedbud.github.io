@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221219200253">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230112163218">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,22 +14,36 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header fixed-top">
 			<div class="header__container">
-				<a href="" class="header__logo">Львівдеревбуд</a>
-				<div class="header__menu menu">
-					<nav class="menu__body">
+				<nav class="header__menu menu">
+					<a href="" class="menu__logo">Львівдеревбуд</a>
+					<button class="icon-menu"><span></span></button>
+					<div class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="#" data-goto-header data-goto=".about" class="menu__link">Про
-									компанію</a></li>
-							<li class="menu__item"><a href="#" data-goto-header data-goto=".services" class="menu__link">Послуги</a></li>
-							<li class="menu__item"><a href="#" data-goto-header data-goto=".portfolio" class="menu__link">Наші
-									роботи</a></li>
-							<li class="menu__item"><a href="#" data-goto-header data-goto=".contacts" class="menu__link">Контакти</a></li>
+							<li class="menu__item">
+								<a href="#" data-goto-header data-goto=".about" class="menu__link">
+									Про компанію
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto-header data-goto=".services" class="menu__link">
+									Послуги
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto-header data-goto=".portfolio" class="menu__link">
+									Наші роботи
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" data-goto-header data-goto=".contacts" class="menu__link">
+									Контакти
+								</a>
+							</li>
 						</ul>
-					</nav>
-				</div>
-				<button class="icon-menu"><span></span></button>
+					</div>
+				</nav>
 			</div>
 		</header>
 		<main class="page">
@@ -41,7 +55,7 @@
 						<h1 class="main-section__title">Деревяні будинки зі зрубу</h1>
 						<hr class="line">
 						<p class="main-section__text">15 років на ринку, 150 виконаних робіт, якісна сировина</p>
-						<a href="" class="main-section__button button">Замовити розрахунок</a>
+						<a href="" class="main-section__btn btn btn-body">Замовити розрахунок</a>
 					</div>
 				</div>
 			</section>
@@ -52,15 +66,15 @@
 						<hr class="line">
 						<p class="about__text">Львівдеревбуд був заснований в 2000році, за ці 15 здобули довіру сотень
 							клієтнів</p>
-						<a href="" class="about__button button">Get Started!</a>
+						<a href="" class="about__btn btn btn-light">Get Started!</a>
 					</div>
 				</div>
 			</section>
 			<section data-watch="navigator" class="page__services services">
 				<div class="services__container">
-					<h2 class="services__title">Ми будуємо тільки якісні будинки</h2>
-					<hr class="line">
 					<div class="services__content">
+						<h2 class="services__title">Ми будуємо тільки якісні будинки</h2>
+						<hr class="line">
 						<div class="services__list">
 							<article class="services__item service">
 								<i class="fa fa-4x fa-thumbs-o-up service__icon _anim-items _anim-no-hide"></i>
@@ -89,69 +103,69 @@
 			<section data-watch="navigator" class="page__portfolio portfolio">
 				<div class="portfolio__container">
 					<div class="portfolio__list">
-						<article class="portfolio__item">
-							<div href="#" class="portfolio__box">
-								<a href="" class="portfolio__img-ibg">
+						<article class="portfolio__item item-portfolio">
+							<div href="#" class="item-portfolio__box">
+								<a href="" class="item-portfolio__img-ibg">
 									<picture><source srcset="img/portfolio/1.webp" type="image/webp"><img src="img/portfolio/1.jpg" alt="Портфолио"></picture>
 								</a>
-								<div data-popup="#popup" class="portfolio__content">
-									<p class="portfolio__category">Category</p>
-									<p class="portfolio__name">Project Name</p>
+								<div data-popup="#popup" class="item-portfolio__content">
+									<p class="item-portfolio__category">Category</p>
+									<p class="item-portfolio__name">Project Name</p>
 								</div>
 							</div>
 						</article>
-						<article class="portfolio__item">
-							<div href="#" class="portfolio__box">
-								<a href="" class="portfolio__img-ibg">
+						<article class="portfolio__item item-portfolio">
+							<div href="#" class="item-portfolio__box">
+								<a href="" class="item-portfolio__img-ibg">
 									<picture><source srcset="img/portfolio/2.webp" type="image/webp"><img src="img/portfolio/2.jpg" alt="Портфолио"></picture>
 								</a>
-								<div data-popup="#popup" class="portfolio__content">
-									<p class="portfolio__category">Category</p>
-									<p class="portfolio__name">Project Name</p>
+								<div data-popup="#popup" class="item-portfolio__content">
+									<p class="item-portfolio__category">Category</p>
+									<p class="item-portfolio__name">Project Name</p>
 								</div>
 							</div>
 						</article>
-						<article class="portfolio__item">
-							<div href="#" class="portfolio__box">
-								<a href="" class="portfolio__img-ibg">
+						<article class="portfolio__item item-portfolio">
+							<div href="#" class="item-portfolio__box">
+								<a href="" class="item-portfolio__img-ibg">
 									<picture><source srcset="img/portfolio/3.webp" type="image/webp"><img src="img/portfolio/3.jpg" alt="Портфолио"></picture>
 								</a>
-								<div data-popup="#popup" class="portfolio__content">
-									<p class="portfolio__category">Category</p>
-									<p class="portfolio__name">Project Name</p>
+								<div data-popup="#popup" class="item-portfolio__content">
+									<p class="item-portfolio__category">Category</p>
+									<p class="item-portfolio__name">Project Name</p>
 								</div>
 							</div>
 						</article>
-						<article class="portfolio__item">
-							<div href="#" class="portfolio__box">
-								<a href="" class="portfolio__img-ibg">
+						<article class="portfolio__item item-portfolio">
+							<div href="#" class="item-portfolio__box">
+								<a href="" class="item-portfolio__img-ibg">
 									<picture><source srcset="img/portfolio/4.webp" type="image/webp"><img src="img/portfolio/4.jpg" alt="Портфолио"></picture>
 								</a>
-								<div data-popup="#popup" class="portfolio__content">
-									<p class="portfolio__category">Category</p>
-									<p class="portfolio__name">Project Name</p>
+								<div data-popup="#popup" class="item-portfolio__content">
+									<p class="item-portfolio__category">Category</p>
+									<p class="item-portfolio__name">Project Name</p>
 								</div>
 							</div>
 						</article>
-						<article class="portfolio__item">
-							<div href="#" class="portfolio__box">
-								<a href="" class="portfolio__img-ibg">
+						<article class="portfolio__item item-portfolio">
+							<div href="#" class="item-portfolio__box">
+								<a href="" class="item-portfolio__img-ibg">
 									<picture><source srcset="img/portfolio/5.webp" type="image/webp"><img src="img/portfolio/5.jpg" alt="Портфолио"></picture>
 								</a>
-								<div data-popup="#popup" class="portfolio__content">
-									<p class="portfolio__category">Category</p>
-									<p class="portfolio__name">Project Name</p>
+								<div data-popup="#popup" class="item-portfolio__content">
+									<p class="item-portfolio__category">Category</p>
+									<p class="item-portfolio__name">Project Name</p>
 								</div>
 							</div>
 						</article>
-						<article class="portfolio__item">
-							<div href="#" class="portfolio__box">
-								<a href="" class="portfolio__img-ibg">
+						<article class="portfolio__item item-portfolio">
+							<div href="#" class="item-portfolio__box">
+								<a href="" class="item-portfolio__img-ibg">
 									<picture><source srcset="img/portfolio/6.webp" type="image/webp"><img src="img/portfolio/6.jpg" alt="Портфолио"></picture>
 								</a>
-								<div data-popup="#popup" class="portfolio__content">
-									<p class="portfolio__category">Category</p>
-									<p class="portfolio__name">Project Name</p>
+								<div data-popup="#popup" class="item-portfolio__content">
+									<p class="item-portfolio__category">Category</p>
+									<p class="item-portfolio__name">Project Name</p>
 								</div>
 							</div>
 						</article>
@@ -160,22 +174,20 @@
 			</section>
 			<section class="page__order order">
 				<div class="order__container">
-					<aside class="order__box">
-						<form action="post" class="order__form form">
-							<div class="form__item">
-								<input autocomplete="off" type="text" name="form[]" class="form__input" data-error="Error" data-required placeholder="Як до вас звертатися?">
-							</div>
-							<div class="form__item">
-								<input autocomplete="off" type="email" name="form[]" class="form__input" data-error="Error" data-required="email" placeholder="Поштова скринька">
-							</div>
-							<div class="form__item">
-								<input autocomplete="off" type="tel" name="form[]" class="form__input" data-error="Error" data-required placeholder="Номер телефону">
-							</div>
-							<div class="form__item">
-								<button type="submit" class="form__button button">Відправити</button>
-							</div>
-						</form>
-					</aside>
+					<form action="post" class="order__form form">
+						<div class="form-item">
+							<input autocomplete="off" type="text" name="form[]" class="form-control" data-error="Error" data-required placeholder="Як до вас звертатися?">
+						</div>
+						<div class="form-item">
+							<input autocomplete="off" type="email" name="form[]" class="form-control" data-error="Error" data-required="email" placeholder="Поштова скринька">
+						</div>
+						<div class="form-item">
+							<input autocomplete="off" type="tel" name="form[]" class="form-control" data-error="Error" data-required placeholder="Номер телефону">
+						</div>
+						<div class="form-item">
+							<button type="submit" class="form__btn btn btn-body">Відправити</button>
+						</div>
+					</form>
 				</div>
 			</section>
 		</main>
@@ -231,7 +243,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20221219200253"></script>
+	<script src="js/app.min.js?_v=20230112163218"></script>
 </body>
 
 </html>
